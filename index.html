@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <script>
-      function ShowPage2(){
-        item=document.getElementById("page1")
+      function ShowWeb(){
+        item=document.getElementById("pageExcel")
         item.style.display="none"
-        item=document.getElementById("page2")
+        item=document.getElementById("pageWeb")
+        item.style.display="block"
+      }
+      function showExcel(){
+        item=document.getElementById("pageWeb")
+        item.style.display="none"
+        item=document.getElementById("pageExcel")
         item.style.display="block"
       }
     </script>
@@ -18,17 +24,17 @@
     </header>
     <nav>
       <ul>
-        <li>Webデザイン</li>
-        <li onclick="ShowPage2()">MOS Excel</li>
+        <li onclick="ShoWweb()">Webデザイン</li>
+        <li onclick="ShowExcel()">MOS Excel</li>
       </ul>
     </nav>
-    <section id="page1">
+    <section id="pageWeb">
       <h1>Webデザイン</h1>
       <p>Web上のデザインをHTMLとCSSを使って学びました。
         以下に作品のリンクを貼り付けます。ご参照ください。</p>
         <p><a href="カフェ/カフェ.html">制作物のリンク</a></p>
     </section>
-    <section id="page2">
+    <section id="pageExcel">
       <h1>MOS Excel</h1>
       <p>Excelで関数を使って計算をして表を作りました。
         以下に作品のリンクを貼り付けます。ご参照ください。</p>
