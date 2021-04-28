@@ -8,11 +8,23 @@
         item.style.display="none"
         item=document.getElementById("page1")
         item.style.display="block"
+        item=document.getElementById("page3")
+        item.style.display="none"
       }
       function Showpage2(){
         item=document.getElementById("page1")
         item.style.display="none"
         item=document.getElementById("page2")
+        item.style.display="block"
+        item=document.getElementById("page3")
+        item.style.display="none"
+      }
+      function Showpage3(){
+        item=document.getElementById("page1")
+        item.style.display="none"
+        item=document.getElementById("page2")
+        item.style.display="none"
+        item=document.getElementById("page3")
         item.style.display="block"
       }
     </script>
@@ -26,6 +38,7 @@
       <ul>
         <li onclick="Showpage1()">Webデザイン</li>
         <li onclick="Showpage2()">MOS Excel</li>
+        <li onclick="Showpage3()">RPA</li>
       </ul>
     </nav>
     <section id="page1">
@@ -36,10 +49,23 @@
     </section>
     <section id="page2">
       <h1>MOS Excel</h1>
-      <p>Excelで関数を使って計算をして表やグラフを作りました。
-        以下に作品のリンクを貼り付けます。ご参照ください。</p>
-        <p><a href="">制作物のリンク</a></p>
+      <p>Excelで関数を使って計算をして表やグラフを作りました。</p>
+      <a href="MOS Excel.png">
+        <img src="MOS Excel.png" alt="MOS Excelの画面" width="200px">
+      </a>
     </section>
+    <section id="page3">
+      <h1>RPA</h1>
+      <p>UIPathでフローチャートを使った自動操作を学びました。</p>
+      <a href="UIPath.png">
+        <img src="UIPath.png" alt="UIPathの画面" width="200px">
+      </a>
+      <ul>
+        <li>メッセージを表示する</li>
+        <li>Excelのデータを読み込む</li>
+        <li>アラーム音を設定する</li>
+      </ul>
+    </section>    
     <footer>
 
     </footer>
